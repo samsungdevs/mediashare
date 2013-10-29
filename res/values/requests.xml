@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="request_source_device" />
+    <item type="id" name="request_target_device" />
+    <item type="id" name="request_image" />
+    <item type="id" name="request_audio" />
+    <item type="id" name="request_video" />
+    <item type="id" name="request_file_for_upload" />
+</resources>

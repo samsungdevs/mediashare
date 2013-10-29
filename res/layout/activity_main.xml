@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/separator1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#44586a"
+        android:padding="4dp"
+        android:text="@string/source"
+        android:textColor="@android:color/white" />
+
+    <RelativeLayout
+        android:id="@+id/source_layout"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_below="@+id/separator1"
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:padding="8dp" >
+
+        <ImageView
+            android:id="@+id/source_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/allshare_icon_blue" />
+
+        <TextView
+            android:id="@+id/source_name"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_toRightOf="@+id/source_icon"
+            android:gravity="bottom"
+            android:text="@string/this_device"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/source_ip"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_below="@+id/source_name"
+            android:layout_toRightOf="@+id/source_icon"
+            android:layout_toLeftOf="@+id/upload"
+            android:layout_alignWithParentIfMissing="true"
+            android:gravity="top"
+            android:text="@string/android_device"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/upload"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_upload" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/separator2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/source_layout"
+        android:background="#44586a"
+        android:padding="4dp"
+        android:text="@string/items"
+        android:textColor="@android:color/white" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/separator2"
+        android:background="#ffececec" >
+    </ListView>
+
+</RelativeLayout>

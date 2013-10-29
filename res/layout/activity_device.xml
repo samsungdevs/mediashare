@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/separator1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#44586a"
+        android:padding="4dp"
+        android:text="Choose A Device"
+        android:textColor="@android:color/white" />
+    
+    <RelativeLayout
+        android:id="@+id/this_device_layout"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_below="@+id/separator1"
+        android:padding="8dp"
+        android:clickable="true"
+        android:background="?android:attr/selectableItemBackground" >
+
+        <ImageView
+            android:id="@+id/this_device_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_this_device" />
+
+        <TextView
+            android:id="@+id/this_device_name"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_toRightOf="@+id/this_device_icon"
+            android:gravity="center_vertical"
+            android:text="This device"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/separator2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/this_device_layout"
+        android:background="#44586a"
+        android:padding="4dp"
+        android:text="Connected Devices"
+        android:textColor="@android:color/white" />
+    
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/separator2"
+        android:background="#ffececec" >
+    </ListView>
+
+</RelativeLayout>
