@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">MediaControl</string>
+    <string name="app_name">Media Share</string>
     <string name="folder">Folder</string>
     <string name="items">Items</string>
     <string name="android_device">Android Device</string>
@@ -13,6 +13,8 @@
     <string name="upload_canceled">Upload canceled!</string>
     <string name="cancel">Cancel</string>
     <string name="upload_error">Upload error: %d</string>
+    <string name="connected_devices">Connected Devices</string>
+    <string name="choose_a_device">Choose A Device</string>
 
     <string-array name="phone_items">
         <item>Video</item>

@@ -7,7 +7,7 @@
         android:id="@+id/separator1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#44586a"
+        android:background="@color/light_blue"
         android:padding="4dp"
         android:text="@string/source"
         android:textColor="@android:color/white" />
@@ -42,10 +42,10 @@
             android:id="@+id/source_ip"
             android:layout_width="match_parent"
             android:layout_height="24dp"
-            android:layout_below="@+id/source_name"
-            android:layout_toRightOf="@+id/source_icon"
-            android:layout_toLeftOf="@+id/upload"
             android:layout_alignWithParentIfMissing="true"
+            android:layout_below="@+id/source_name"
+            android:layout_toLeftOf="@+id/upload"
+            android:layout_toRightOf="@+id/source_icon"
             android:gravity="top"
             android:text="@string/android_device"
             android:textSize="12sp" />
@@ -65,7 +65,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/source_layout"
-        android:background="#44586a"
+        android:background="@color/light_blue"
         android:padding="4dp"
         android:text="@string/items"
         android:textColor="@android:color/white" />
@@ -74,8 +74,7 @@
         android:id="@android:id/list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/separator2"
-        android:background="#ffececec" >
+        android:layout_below="@+id/separator2" >
     </ListView>
 
 </RelativeLayout>

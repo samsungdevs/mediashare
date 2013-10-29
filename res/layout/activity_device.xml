@@ -7,19 +7,19 @@
         android:id="@+id/separator1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#44586a"
+        android:background="@color/light_blue"
         android:padding="4dp"
-        android:text="Choose A Device"
+        android:text="@string/choose_a_device"
         android:textColor="@android:color/white" />
-    
+
     <RelativeLayout
         android:id="@+id/this_device_layout"
         android:layout_width="match_parent"
         android:layout_height="64dp"
         android:layout_below="@+id/separator1"
-        android:padding="8dp"
+        android:background="?android:attr/selectableItemBackground"
         android:clickable="true"
-        android:background="?android:attr/selectableItemBackground" >
+        android:padding="8dp" >
 
         <ImageView
             android:id="@+id/this_device_icon"
@@ -34,27 +34,26 @@
             android:layout_height="48dp"
             android:layout_toRightOf="@+id/this_device_icon"
             android:gravity="center_vertical"
-            android:text="This device"
+            android:text="@string/this_device"
             android:textSize="16sp"
             android:textStyle="bold" />
     </RelativeLayout>
-    
+
     <TextView
         android:id="@+id/separator2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/this_device_layout"
-        android:background="#44586a"
+        android:background="@color/light_blue"
         android:padding="4dp"
-        android:text="Connected Devices"
+        android:text="@string/connected_devices"
         android:textColor="@android:color/white" />
-    
+
     <ListView
         android:id="@android:id/list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/separator2"
-        android:background="#ffececec" >
+        android:layout_below="@+id/separator2" >
     </ListView>
 
 </RelativeLayout>
